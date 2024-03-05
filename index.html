@@ -1,528 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>FossBits - Olufowobi Babs</title>
 
-    <!-- Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="Fossbits" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
-    <!-- Global CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babs Olufowobi - ASP.NET Stack Engineer</title>
+    <meta name="description" content="Babs Olufowobi is a passionate and dedicated software engineer specializing in ASP.NET development.">
+    <meta name="keywords" content="Babs Olufowobi, ASP.NET, software engineer, portfolio">
+    <meta name="author" content="Babs Olufowobi">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    <link
-      rel="stylesheet"
-      href="assets/css/bootstrap.min.css"
-    />
-  
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-2.css" />
-  </head>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(150deg,
+                    rgba(255, 183, 0, 0.8),
+                    rgba(255, 118, 128, 0.9)),
+                url(images/cover_bg_3.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-  <body>
-    <div class="wrapper">
-      <div class="sidebar-wrapper">
-        <div class="profile-container">
-          <img
-            class="profile d-print-none"
-            src="assets/images/profile.png"
-            alt=""
-          />
-          <h1 class="name">Olufowobi Samuel Babs</h1>
-          <h3 class="tagline">Software Developer</h3>
+        h1,
+        h2,
+        h3 {
+            font-family: 'Kaushan Script', cursive;
+            margin-bottom: 20px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile Section */
+        .profile-summary {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-thumb {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+            background-color: #ddd;
+            /* Placeholder color */
+            background-image: url(https://gravatar.com/avatar/b0a983f14d4211758f4bd79281eb9969?size=256);
+            background-size: cover;
+            background-position: center;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .full-name {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .occupation {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        .about-section {
+            margin-bottom: 40px;
+        }
+
+        .about-section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    </style>
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    </noscript>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-summary">
+            <div class="profile-thumb"></div>
+            <h1 class="full-name">Babs Olufowobi</h1>
+            <h2 class="occupation">ASP.NET Stack Engineer</h2>
         </div>
-        <!--//profile-container-->
 
-        <div class="contact-container container-block">
-          <ul class="list-unstyled contact-list">
-            <li class="email">
-              <i class="fas fa-envelope"></i
-              ><a href="mailto: olufowobibabs@gmail.com"
-                >olufowobibabs@gmail.com</a
-              >
-            </li>
-            <li class="phone">
-              <i class="fas fa-phone"></i
-              ><a href="tel:+2348069282315">+2348069282315</a>
-            </li>
-            <li class="linkedin">
-              <i class="fab fa-linkedin-in"></i
-              ><a href="https://www.linkedin.com/in/olufowobi-babs-89787b168/" target="_blank">linkedin.com/in/olufowobibabs</a>
-            </li>
-            <li class="github">
-              <i class="fab fa-github"></i
-              ><a href="http://babz-xo.github.io" target="_blank">github.com/Babz-xo</a>
-            </li>
-            <li class="instagram">
-              <i class="fab fa-instagram"></i
-              ><a href="https://instagram.com/babz.xo" target="_blank"
-                >@babz.xo</a
-              >
-            </li>
-          </ul>
+        <div class="about-section">
+            <h2>About Me</h2>
+            <p>I'm a passionate and dedicated software engineer specializing in ASP.NET development. With a keen eye for
+                detail and a drive for innovation, I excel in creating efficient and scalable solutions to complex
+                problems. I thrive in collaborative environments and am always eager to learn and grow as a
+                professional.</p>
         </div>
-        <!--//contact-container-->
-        <div class="education-container container-block">
-          <h2 class="container-block-title">Education</h2>
-          <!-- <div class="item">
-                    <h4 class="degree">MSc in Computer Science</h4>
-                    <h5 class="meta">University of London</h5>
-	                    <div class="time">2016 - 2018</div>
-                </div>//item-->
-          <div class="item">
-            <h4 class="degree">BTech in Computer Science</h4>
-            <h5 class="meta">
-              Ondo State University of Science and Technology Okitipupa
-            </h5>
-            <div class="time">2013 - 2018</div>
-          </div>
-          <!--//item-->
-        </div>
-        <!--//education-container-->
-
-        <div class="languages-container container-block">
-          <h2 class="container-block-title">Skills</h2>
-          <ul class="list-unstyled interests-list">
-            <li>
-              Programming Language
-              <span class="lang-desc d-block">(JavaScript, C#)</span>
-            </li>
-            <li>
-              Frameworks
-              <span class="lang-desc d-block"
-                >(TypeScript, Angular,<br />
-                ASP CORE(WebApi))</span
-              >
-            </li>
-          </ul>
-        </div>
-        <!--//Skills-->
-        <div class="languages-container container-block">
-          <h2 class="container-block-title">Languages</h2>
-          <ul class="list-unstyled interests-list">
-            <li>Yoruba <span class="lang-desc">(Native)</span></li>
-            <li>English <span class="lang-desc">(Professional)</span></li>
-          </ul>
-        </div>
-        <!--//interests-->
-        <div class="interests-container container-block">
-          <h2 class="container-block-title">Interests</h2>
-          <ul class="list-unstyled interests-list">
-            <li>Table Tennis</li>
-            <li>Anime watching</li>
-            <li>Football</li>
-          </ul>
-        </div>
-        <!--//referees-->
-        <div class="languages-container container-block d-none d-print-block">
-          <h2 class="container-block-title text-warning">Referees</h2>
-          <ul class="list-unstyled interests-list text-warning">
-            <li>Available on request</li>
-          </ul>
-        </div>
-      </div>
-      <!--//sidebar-wrapper-->
-
-      <div class="main-wrapper">
-        <section class="section summary-section">
-          <h2 class="section-title">
-            <span class="icon-holder"><i class="fas fa-user"></i></span>Career
-            Profile
-          </h2>
-          <div class="summary text-justify">
-            <p>
-              A skilled Software Engineer. Have significant experience with Web
-              and Desktop technologies and customisation. Also skilled in
-              frameworks such as Angular, Ionic, Telerik Framework and .NET.
-              Specialties: Angular, Ionic, .NET, SQL, Report Definition
-              Language, Redis.
-            </p>
-          </div>
-          <!--//summary-->
-        </section>
-        <!--//section-->
-
-        <section class="section experiences-section">
-          <h2 class="section-title">
-            <span class="icon-holder"><i class="fas fa-briefcase"></i></span
-            >Experiences
-          </h2>
-
-          <div class="item">
-            <div class="meta">
-              <div class="upper-row">
-                <h3 class="job-title">Software Developer</h3>
-                <div class="time">2019 - Present</div>
-              </div>
-              <!--//upper-row-->
-              <div class="company">Freelance, self-employed</div>
-            </div>
-            <!--//meta-->
-            <div class="details">
-              <p class="text-justify">
-                Currently providing custom automation solutions to various
-                clients and also developing & maintaining contracted student
-                result management software and e-commerce stores.
-              </p>
-            </div>
-            <!--//details-->
-          </div>
-          <!--//item-->
-
-          <div class="item">
-            <div class="meta">
-              <div class="upper-row">
-                <h3 class="job-title">Junior Software Engineer</h3>
-                <div class="time">2018 - 2019</div>
-              </div>
-              <!--//upper-row-->
-              <div class="company">ITU College of Medicine UI, Ibadan</div>
-            </div>
-            <!--//meta-->
-            <div class="details">
-              <ul class="list-unstyled">
-                <li>
-                  <p class="text-justify">
-                    Architected and built a proof of concept e-commerce solution
-                    for SMEs businesses willing to go online, incorporating
-                    Business Intelligence and Inventory Management to enhance
-                    SMEs business reach to its customers.
-                  </p>
-                </li>
-                <li>
-                  <p class="text-justify">
-                    Contracted to fully develop and implement a payslip
-                    management system, to accommodate the newly initiated IPPIS
-                    system in the country. Using the technology provided with
-                    ASP core 3.1 and IText 7, as well as utilizing existing web
-                    hosting domain, reducing the cost to a minimal amount
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <!--//details-->
-          </div>
-          <!--//item-->
-
-          <div class="item">
-            <div class="meta">
-              <div class="upper-row">
-                <h3 class="job-title">Intern Network Engineer</h3>
-                <div class="time">2016 - 2017</div>
-              </div>
-              <!--//upper-row-->
-              <div class="company">Computer Resource Center, FUTA, Akure</div>
-            </div>
-            <!--//meta-->
-            <div class="details">
-              <ul class="list-unstyled">
-                <li>
-                  <p class="text-justify">
-                    Dedicated Network Intern, Responsible for the capturing of
-                    university staff profile details for registration on our
-                    radius server for the universities' captive portal
-                    authentication page.
-                  </p>
-                </li>
-                <li>
-                  <p class="text-justify">
-                    Part of the team that partnered with Zinox, in deploying the
-                    cisco networking tools(Jaber system, telepresence
-                    conferencing system and
-                    <abbr title="Internet Protocol">IP</abbr>-phones),
-                    <abbr
-                      class="text-muted"
-                      title="Simple Network Management Protocol"
-                      >SNMP</abbr
-                    >
-                    tools (Sensaphone Web600).
-                  </p>
-                </li>
-                <li>
-                  <p class="text-justify">
-                    Responsible for basic and intermediate troubleshooting of
-                    unreachable network node(to CRC network Routers) connection
-                    problems for university staff.
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <!--//details-->
-          </div>
-          <!--//item-->
-        </section>
-        <!--//section-->
-
-        <section class="section projects-section">
-          <h2 class="section-title">
-            <span class="icon-holder"><i class="fas fa-archive"></i></span
-            >Projects
-          </h2>
-          <!--    <div class="intro">
-                    <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-                </div> //intro-->
-          <!--//item-->
-          <div class="item">
-            <span class="project-title font-weight-bold text-dark"
-              ><a>Online Payslip Management</a>
-            </span>
-            -
-            <span class="project-tagline text-justify">
-              An application developed for sending staff payslip automatically
-              each month to specified staff mail.
-              <br />
-              Fully customized and efficient, for full administrative control.
-              functions include:
-              <ol type="a" class="mb-0">
-                <li>Provision of individual user account</li>
-                <li>
-                  Auto extract and sending payslip to mail based on staff
-                  request
-                </li>
-                <li>Moderation capabilities (Admin, Moderator, Member)</li>
-                <li>Logging capabilities</li>
-              </ol>
-
-              <span class="font-italic d-block"
-                >(Angular, ASP CORE 3.1 WebApi and MySQL.)</span
-              >
-            </span>
-          </div>
-          <div class="item">
-            <span class="project-title font-weight-bold text-dark"
-              ><a>Driving school Application</a></span
-            >
-            -
-            <span class="project-tagline text-justify"
-              >An application for storing trainee details, training payment fees,
-              and auto-generation trainee permanent and temporary identification
-              cards.</span
-            >
-            <span class="font-italic d-block"
-              >((WPF .net framework 4.5), RDLC and SQL server localdb
-              2012.)</span
-            >
-          </div>
-          <!--//item-->
-          <div class="item">
-            <span class="project-title font-weight-bold text-dark"
-              ><a>Online Dating Application</a>
-            </span>
-            -
-            <span class="project-tagline text-justify">
-              An application developed for interconnecting people and matching
-              them up for meet up.
-              <br />Perform all function of a standard dating site, which
-              includes:
-              <ol type="a" class="mb-0">
-                <li>Liking Function</li>
-                <li>Real-Time Messaging Function</li>
-                <li>Moderation capabilities</li>
-                <li>
-                  Picture Management (all pictures are stored at Cloudinary via
-                  Api Plugin)
-                </li>
-              </ol>
-              <span class="font-italic d-block"
-                >(Angular, ASP CORE 3.1 WebApi and MySQL.)</span
-              >
-            </span>
-          </div>
-
-          <div class="item" style="page-break-before: always;">
-            <div
-              class="d-none d-print-block"
-              style="margin-bottom: 2rem;"
-            ></div>
-            <span class="project-title font-weight-bold text-dark"
-              ><a
-                >Off-shelve Secondary and Primary School Result Manager</a
-              ></span
-            >
-            -
-            <span class="project-tagline text-justify"
-              >An application for quick statistical calculation and generation
-              of student reports sheets, it also performs auto cumulative statistics
-              (average score, position in a subject, position in class, auto-grading, and e.t.c).</span
-            >
-            <span class="font-italic d-block"
-              >((WinForm .net framework 4.0), RDLC and SQL server localdb
-              2012.)</span
-            >
-          </div>
-          <div class="item">
-            <span class="project-title font-weight-bold text-dark"
-              ><a
-                >Prediction of critical factors in determining students’ final
-                performance (using Decision Tree and Bayesian Algorithms)</a
-              ></span
-            >
-            -
-            <span class="project-tagline text-justify"
-              >An application that determines critical factors affecting
-              student’s final performance based on past graduated set of
-              students performance dataset. <br />
-              A new training dataset is generated using the implementation of
-              J.48 and Naive Bayes algorithms in WEKA.jar and applied on the
-              test dataset to generate predictions and determine critical
-              factors affecting such performance.</span
-            >
-            <span class="font-italic d-block"
-              >((WinForm .net framework 4.0), Aforge, IKVM.NET and
-              WEKA.JAR)</span
-            >
-          </div>
-          <div class="item">
-            <span class="project-title font-weight-bold text-dark"
-              ><a>An Expert system on the detection of Leghaemoglobin</a></span
-            >
-            -
-            <span class="project-tagline text-justify"
-              >An application advise and give inference on plant type, presence of rhizomes 
-              in root nodules, and presence of leghaemoglobin, it also assists in the 
-              extraction process of the plant molecule by showing document process in doing so.
-              <br>It gives answers to frequently asked questions on the subject domain.
-              Serves up useful pdf and video content to the user.</span
-            >
-            <span class="font-italic d-block"
-              >((WinForm .net framework 4.0), Aforge, IKVM.NET and
-              WEKA.JAR)</span
-            >
-          </div>
-          <!--//item-->
-        </section>
-        <!--//section-->
-
-        <section class="skills-section section">
-          <h2 class="section-title">
-            <span class="icon-holder"><i class="fas fa-rocket"></i></span>Skills
-            &amp; Proficiency
-          </h2>
-          <div class="skillset">
-            <div class="item">
-              <h3 class="level-title">C# &amp; ASP Core 3.1 WebApi</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style="width: 99%;"
-                  aria-valuenow="99"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <!--//item-->
-
-            <div class="item">
-              <h3 class="level-title">Javascript &amp; TypeScript</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style="width: 98%;"
-                  aria-valuenow="98"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="level-title">Angular</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style="width: 90%;"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <!--//item-->
-            <div class="item">
-              <h3 class="level-title">WinForm &amp; WPF</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style="width: 90%;"
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <!--//item-->
-
-            <div class="item">
-              <h3 class="level-title">HTML5 &amp; Bootstrap4</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style="width: 95%;"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <!--//item-->
-
-            <div class="item">
-              <h3 class="level-title">Inkscape</h3>
-              <div class="progress level-bar">
-                <div
-                  class="progress-bar theme-progress-bar"
-                  role="progressbar"
-                  style="width: 60%;"
-                  aria-valuenow="60"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <!--//item-->
-          </div>
-        </section>
-        <!--//skills-section-->
-      </div>
-      <!--//main-body-->
     </div>
+</body>
 
-    <footer class="footer d-print-none">
-      <div class="text-center footer-copyright">
-        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-        <p class="d-flex flex-column justify-content-center align-items-center">
-          <span>
-            © 2020 Copyright:
-            <a target="_blank" href="https://babz-xo.github.io/"
-              >Fossbits Tech</a
-            >
-          </span>
-          <small>
-            Template credits
-            <a target="_blank" href="http://themes.3rdwavemedia.com/">
-              Xiaoying Riley
-            </a>
-          </small>
-        </p>
-      </div>
-      <!--//container-->
-    </footer>
-    <!--//footer-->
-  </body>
 </html>
